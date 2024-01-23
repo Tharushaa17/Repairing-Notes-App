@@ -3,25 +3,6 @@ import { Link } from 'react-router-dom'
 
 const Public = () => {
   return (
-    // <section>
-    //           <header>
-    //             <h1 className='text-4xl text-center font-semibold mt-5'>Welcome to <span className="nowrap">D. D. Repairs!</span></h1>
-    //         </header>
-    //         <main className="public__main">
-    //             <p>Located in Beautiful Downtown Foo City, Dan D. Repairs  provides a trained staff ready to meet your tech repair needs.</p>
-    //             <address className="public__addr">
-    //                 Dan D. Repairs<br />
-    //                 555 Foo Drive<br />
-    //                 Foo City, CA 12345<br />
-    //                 <a href="tel:+15555555555">(555) 555-5555</a>
-    //             </address>
-    //             <br />
-    //             <p>Owner: Dan Davidson</p>
-    //         </main>
-    //         <footer>
-    //             <Link to="/login">Employee Login</Link>
-    //         </footer>
-    // </section>
     <div className="flex items-center justify-center h-screen">
       <div className="max-w-lg p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 ">
         <div>
@@ -58,7 +39,6 @@ const Public = () => {
         </div>
     </div>
   </div>
-
   )
 }
 

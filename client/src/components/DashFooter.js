@@ -23,10 +23,13 @@ const DashFooter = () => {
         )
     }
     const content = (
-        <footer className='dash-footer'>
-            {onGoHomeButton}
-            <p>Current User:</p>
-            <p>Status:</p>
+        <footer>
+            <hr></hr>
+            <div className='flex flex-row justify-between mt-5'>
+                {onGoHomeButton}
+                <p className='p-2'>Current User:  <span className='font-bold'>Tharushaa</span></p>
+                <p className='p-2'>Status:  <span className='font-bold'>Active</span></p>
+            </div>
         </footer>
     )
   return content

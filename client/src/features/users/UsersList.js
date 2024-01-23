@@ -28,18 +28,20 @@ const UsersList = () => {
             : null
 
         content = (
-            <table className="table table--users">
-                <thead className="table__thead">
+            <div className="max-w-3xl mx-auto bg-white shadow-lg p-4 rounded-md mt-4">
+    <table className="min-w-full">
+                <thead>
                     <tr>
-                        <th scope="col" className="table__th user__username">Username</th>
-                        <th scope="col" className="table__th user__roles">Roles</th>
-                        <th scope="col" className="table__th user__edit">Edit</th>
+                        <th className="py-2 px-4 border-b border-gray-300">Username</th>
+                        <th className="py-2 px-4 border-b border-gray-300">Roles</th>
+                        <th className="py-2 px-4 border-b border-gray-300">Edit</th>
                     </tr>
                 </thead>
                 <tbody>
                     {tableContent}
                 </tbody>
             </table>
+            </div>
         )
     }
 

@@ -7,7 +7,7 @@ import { selectUserById } from './usersApiSlice'
 
 const User = ({ userId }) => {
     const user = useSelector(state => selectUserById(state, userId))
-
+    console.log(user);
     const navigate = useNavigate()
 
     if (user) {
@@ -18,10 +18,10 @@ const User = ({ userId }) => {
         const cellStatus = user.active ? '' : 'table__cell--inactive'
 
         return (
-            <tr className="table__row user">
-                <td className={`table__cell ${cellStatus}`}>{user.username}</td>
-                <td className={`table__cell ${cellStatus}`}>{userRolesString}</td>
-                <td className={`table__cell ${cellStatus}`}>
+            <tr>
+                <td className="py-2 px-4 border-b border-gray-300">{user.username}</td>
+                <td className="py-2 px-4 border-b border-gray-300">{userRolesString}</td>
+                <td className="py-2 px-4 border-b border-gray-300">
                     <button
                         className="icon-button table__button"
                         onClick={handleEdit}
